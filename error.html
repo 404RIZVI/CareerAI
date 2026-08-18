@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Something went wrong · CareerAI{% endblock %}
+{% block content %}<section class="error-page"><span class="eyebrow">Oops</span><h1>We couldn't complete that.</h1><p>{{ message }}</p><a class="btn btn-primary" href="{{ url_for('assessment') }}">Back to assessment</a></section>{% endblock %}

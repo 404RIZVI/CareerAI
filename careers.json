@@ -1,0 +1,564 @@
+[
+  {
+    "name": "AI/ML Engineer",
+    "description": "Builds intelligent systems using machine learning, data, software engineering and experimentation.",
+    "skills": [
+      "Python",
+      "Mathematics",
+      "SQL",
+      "Data Analysis",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BSc/BS Computer Science",
+      "BSc Data Science",
+      "BTech AI/ML",
+      "Statistics or related master's"
+    ],
+    "jobs": [
+      "ML Engineer",
+      "AI Engineer",
+      "Applied Scientist",
+      "NLP Engineer"
+    ],
+    "roadmap": [
+      "Python",
+      "Mathematics & Statistics",
+      "SQL & Data Handling",
+      "Machine Learning",
+      "Deep Learning",
+      "Projects",
+      "Internship",
+      "Advanced specialization"
+    ],
+    "salary_range": "Varies widely by country, experience and company; research current local ranges before making decisions.",
+    "demand_level": "High",
+    "education": "Bachelor's degree in CS, Data Science, AI/ML, Statistics or a related field is a common route.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Artificial Intelligence",
+      "Programming",
+      "Data",
+      "Research"
+    ],
+    "project_ideas": [
+      "Student performance predictor",
+      "Recommendation system",
+      "Computer vision mini-project"
+    ]
+  },
+  {
+    "name": "Data Scientist",
+    "description": "Uses statistics, programming and machine learning to extract insights and build predictive models.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Data Analysis",
+      "Mathematics",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BSc Data Science",
+      "BSc/BS Computer Science",
+      "Statistics",
+      "Economics with strong quantitative training"
+    ],
+    "jobs": [
+      "Data Scientist",
+      "ML Analyst",
+      "Research Analyst",
+      "Decision Scientist"
+    ],
+    "roadmap": [
+      "Python",
+      "Statistics",
+      "SQL",
+      "Data Visualization",
+      "Machine Learning",
+      "Model Evaluation",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies widely by country, experience and company; approximate figures should be checked against current market data.",
+    "demand_level": "High",
+    "education": "Quantitative bachelor's degree plus practical data/ML skills is a common route.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Data",
+      "Artificial Intelligence",
+      "Research",
+      "Programming"
+    ],
+    "project_ideas": [
+      "Sales forecasting",
+      "Recommendation engine",
+      "Customer churn analysis"
+    ]
+  },
+  {
+    "name": "Software Developer",
+    "description": "Designs, builds, tests and maintains software applications and services.",
+    "skills": [
+      "Python",
+      "C/C++",
+      "JavaScript",
+      "HTML/CSS",
+      "SQL",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BSc/BS Computer Science",
+      "BCA",
+      "BTech Computer Science",
+      "Software engineering programs"
+    ],
+    "jobs": [
+      "Software Engineer",
+      "Backend Developer",
+      "Frontend Developer",
+      "Full-stack Developer"
+    ],
+    "roadmap": [
+      "Programming fundamentals",
+      "DSA",
+      "Git & APIs",
+      "Web development",
+      "Databases",
+      "Testing",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies by market, specialization, experience and company.",
+    "demand_level": "High",
+    "education": "Computer science or software engineering study is a common route, but portfolios also matter.",
+    "difficulty": "Intermediate",
+    "related_interests": [
+      "Programming",
+      "Cloud Computing"
+    ],
+    "project_ideas": [
+      "Full-stack task app",
+      "REST API",
+      "Campus management system"
+    ]
+  },
+  {
+    "name": "Data Analyst",
+    "description": "Turns structured data into reports, dashboards and actionable business insights.",
+    "skills": [
+      "SQL",
+      "Excel",
+      "Data Analysis",
+      "Mathematics",
+      "Communication"
+    ],
+    "courses": [
+      "BSc Data Science",
+      "Business Analytics",
+      "Statistics",
+      "Commerce with analytics skills"
+    ],
+    "jobs": [
+      "Data Analyst",
+      "BI Analyst",
+      "Reporting Analyst",
+      "Operations Analyst"
+    ],
+    "roadmap": [
+      "Excel",
+      "SQL",
+      "Statistics",
+      "Data Cleaning",
+      "Power BI/Tableau",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies by market and experience; use current local salary surveys for estimates.",
+    "demand_level": "High",
+    "education": "A quantitative or business-related bachelor's degree with analytics skills is common.",
+    "difficulty": "Intermediate",
+    "related_interests": [
+      "Data",
+      "Finance",
+      "Business"
+    ],
+    "project_ideas": [
+      "College dashboard",
+      "Sales KPI dashboard",
+      "Survey analysis"
+    ]
+  },
+  {
+    "name": "Cyber Security Analyst",
+    "description": "Helps protect systems and information by monitoring, assessing and responding to security risks.",
+    "skills": [
+      "C/C++",
+      "Python",
+      "SQL",
+      "Problem Solving",
+      "Communication"
+    ],
+    "courses": [
+      "BSc Cyber Security",
+      "BSc/BS Computer Science",
+      "Networking and security certifications"
+    ],
+    "jobs": [
+      "Security Analyst",
+      "SOC Analyst",
+      "Security Engineer",
+      "Incident Response Analyst"
+    ],
+    "roadmap": [
+      "Networking",
+      "Linux",
+      "Security fundamentals",
+      "Security tools",
+      "Safe lab projects",
+      "Threat analysis",
+      "Internship"
+    ],
+    "salary_range": "Varies by region, role, certifications and experience.",
+    "demand_level": "High",
+    "education": "Cyber security or computer science education plus practical, ethical lab experience is common.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Cyber Security",
+      "Programming",
+      "Research",
+      "Cloud Computing"
+    ],
+    "project_ideas": [
+      "Security log analyzer",
+      "Phishing-awareness demo",
+      "Network monitoring dashboard"
+    ]
+  },
+  {
+    "name": "Financial Analyst",
+    "description": "Evaluates financial information, business performance and market data to support decisions.",
+    "skills": [
+      "Excel",
+      "Mathematics",
+      "SQL",
+      "Data Analysis",
+      "Communication"
+    ],
+    "courses": [
+      "BCom",
+      "BBA Finance",
+      "Economics",
+      "Finance or quantitative master's"
+    ],
+    "jobs": [
+      "Financial Analyst",
+      "FP&A Analyst",
+      "Investment Research Analyst",
+      "Risk Analyst"
+    ],
+    "roadmap": [
+      "Finance basics",
+      "Excel",
+      "Financial statements",
+      "Financial modeling",
+      "SQL",
+      "Visualization",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies strongly by country, sector, experience and certifications.",
+    "demand_level": "Medium-High",
+    "education": "Finance, commerce, economics or quantitative study is common.",
+    "difficulty": "Intermediate",
+    "related_interests": [
+      "Finance",
+      "Business",
+      "Data"
+    ],
+    "project_ideas": [
+      "Financial dashboard",
+      "Budget planner",
+      "Company ratio analysis"
+    ]
+  },
+  {
+    "name": "Cloud Engineer",
+    "description": "Designs and operates scalable cloud infrastructure, services and deployment systems.",
+    "skills": [
+      "Python",
+      "C/C++",
+      "SQL",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BSc/BS Computer Science",
+      "Cloud computing programs",
+      "Computer engineering"
+    ],
+    "jobs": [
+      "Cloud Engineer",
+      "Cloud Administrator",
+      "Solutions Engineer",
+      "Platform Engineer"
+    ],
+    "roadmap": [
+      "Networking",
+      "Linux",
+      "Cloud fundamentals",
+      "Containers",
+      "Infrastructure as Code",
+      "Monitoring",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies by cloud platform, location, experience and role.",
+    "demand_level": "High",
+    "education": "Computer science or engineering study with cloud and systems practice is common.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Cloud Computing",
+      "Programming",
+      "Cyber Security"
+    ],
+    "project_ideas": [
+      "Cloud-hosted web app",
+      "Containerized API",
+      "Monitoring dashboard"
+    ]
+  },
+  {
+    "name": "UI/UX Designer",
+    "description": "Designs digital experiences by combining user research, interaction design, visual systems and prototyping.",
+    "skills": [
+      "HTML/CSS",
+      "Communication",
+      "Design",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BDes",
+      "Interaction Design",
+      "UX Design programs",
+      "Computer science with UX specialization"
+    ],
+    "jobs": [
+      "UX Designer",
+      "UI Designer",
+      "Product Designer",
+      "UX Researcher"
+    ],
+    "roadmap": [
+      "Design basics",
+      "Figma",
+      "UX research",
+      "Wireframes",
+      "Prototyping",
+      "Usability testing",
+      "Portfolio",
+      "Internship"
+    ],
+    "salary_range": "Varies by market, portfolio, specialization and experience.",
+    "demand_level": "Medium-High",
+    "education": "Design education is useful, while a strong portfolio and user-centered process are important.",
+    "difficulty": "Intermediate",
+    "related_interests": [
+      "Design",
+      "Marketing",
+      "Management"
+    ],
+    "project_ideas": [
+      "Student portal redesign",
+      "Mobile app prototype",
+      "Accessibility audit"
+    ]
+  },
+  {
+    "name": "Business Analyst",
+    "description": "Bridges business needs and technical teams through requirements, analysis, process improvement and communication.",
+    "skills": [
+      "Excel",
+      "SQL",
+      "Data Analysis",
+      "Communication",
+      "Problem Solving",
+      "Leadership"
+    ],
+    "courses": [
+      "BBA",
+      "BCom",
+      "Business Analytics",
+      "Computer Science with business electives"
+    ],
+    "jobs": [
+      "Business Analyst",
+      "Process Analyst",
+      "Systems Analyst",
+      "Consulting Analyst"
+    ],
+    "roadmap": [
+      "Business fundamentals",
+      "Excel",
+      "Requirements gathering",
+      "SQL",
+      "Process mapping",
+      "BI tools",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies by industry, region and experience.",
+    "demand_level": "High",
+    "education": "Business, information systems or computer science education can lead to this role.",
+    "difficulty": "Intermediate",
+    "related_interests": [
+      "Business",
+      "Management",
+      "Data",
+      "Marketing"
+    ],
+    "project_ideas": [
+      "Process improvement case study",
+      "Requirements document",
+      "KPI dashboard"
+    ]
+  },
+  {
+    "name": "Robotics Engineer",
+    "description": "Combines software, electronics, mechanics and control concepts to build robotic systems.",
+    "skills": [
+      "Python",
+      "C/C++",
+      "Mathematics",
+      "Problem Solving",
+      "Design"
+    ],
+    "courses": [
+      "BTech Robotics",
+      "Mechanical/Electrical Engineering",
+      "Computer Engineering",
+      "Robotics master's"
+    ],
+    "jobs": [
+      "Robotics Engineer",
+      "Controls Engineer",
+      "Automation Engineer",
+      "ROS Developer"
+    ],
+    "roadmap": [
+      "Programming",
+      "Mathematics & physics",
+      "Electronics",
+      "Control systems",
+      "Robotics software",
+      "Simulation",
+      "Projects",
+      "Internship"
+    ],
+    "salary_range": "Varies by robotics sector, location and experience.",
+    "demand_level": "Growing",
+    "education": "Engineering or robotics study with hands-on projects is a common route.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Robotics",
+      "Artificial Intelligence",
+      "Research"
+    ],
+    "project_ideas": [
+      "Line-following robot",
+      "Computer vision robot",
+      "Simulated robotic arm"
+    ]
+  },
+  {
+    "name": "DevOps Engineer",
+    "description": "Improves software delivery through automation, infrastructure, CI/CD, monitoring and reliable operations.",
+    "skills": [
+      "Python",
+      "C/C++",
+      "SQL",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BSc/BS Computer Science",
+      "Cloud/DevOps programs",
+      "Computer engineering"
+    ],
+    "jobs": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Platform Engineer",
+      "Release Engineer"
+    ],
+    "roadmap": [
+      "Linux",
+      "Git",
+      "Networking",
+      "CI/CD",
+      "Containers",
+      "Cloud",
+      "Infrastructure as Code",
+      "Projects"
+    ],
+    "salary_range": "Varies by market, company and experience.",
+    "demand_level": "High",
+    "education": "Computer science, IT or engineering plus strong systems practice is common.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Cloud Computing",
+      "Programming",
+      "Cyber Security"
+    ],
+    "project_ideas": [
+      "CI/CD demo",
+      "Container deployment",
+      "Monitoring and alerting lab"
+    ]
+  },
+  {
+    "name": "Product Manager",
+    "description": "Guides product direction by combining user needs, business goals, data and cross-functional collaboration.",
+    "skills": [
+      "Communication",
+      "Data Analysis",
+      "Leadership",
+      "Design",
+      "Problem Solving"
+    ],
+    "courses": [
+      "BBA",
+      "BSc/BS Computer Science",
+      "Business Analytics",
+      "MBA later if useful"
+    ],
+    "jobs": [
+      "Product Manager",
+      "Associate Product Manager",
+      "Product Analyst",
+      "Product Operations"
+    ],
+    "roadmap": [
+      "Product fundamentals",
+      "User research",
+      "Analytics",
+      "Roadmapping",
+      "Prototyping",
+      "Experimentation",
+      "Case studies",
+      "Internship"
+    ],
+    "salary_range": "Varies significantly by company, market, level and experience.",
+    "demand_level": "Medium-High",
+    "education": "There is no single required degree; business, technology and design backgrounds can all be relevant.",
+    "difficulty": "Advanced",
+    "related_interests": [
+      "Business",
+      "Management",
+      "Design",
+      "Marketing"
+    ],
+    "project_ideas": [
+      "Product case study",
+      "Feature prioritization tool",
+      "User research report"
+    ]
+  }
+]

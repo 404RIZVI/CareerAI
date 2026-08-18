@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}AI Career Guidance System{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">AI-powered career discovery</span>
+    <h1>Find the career path that fits <span>you.</span></h1>
+    <p class="hero-text">Discover a career match using your academics, interests, skills and problem-solving preferences — then get a practical roadmap to move forward.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ url_for('assessment') }}">Start Career Assessment <span>→</span></a>
+      <a class="btn btn-ghost" href="#how">See how it works</a>
+    </div>
+    <div class="trust-row"><span>✓ Explainable scoring</span><span>✓ Personalized skill gaps</span><span>✓ Works without an AI API key</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="orb"></div>
+    <div class="floating-card card-main">
+      <div class="mini-label">YOUR TOP MATCH</div>
+      <div class="match-title">AI/ML Engineer</div>
+      <div class="match-score">92% <small>match</small></div>
+      <div class="bar"><i style="width:92%"></i></div>
+      <div class="tiny-row"><span>Math</span><span>Programming</span><span>AI interest</span></div>
+    </div>
+    <div class="floating-card card-side"><span class="icon">✦</span><strong>Skill Gap</strong><small>4 skills to build</small></div>
+    <div class="floating-card card-bottom"><span class="icon">↗</span><strong>Roadmap ready</strong><small>8 practical stages</small></div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="section-heading"><span class="eyebrow">Simple process</span><h2>From answers to action.</h2><p>Our recommendation is designed to be understandable enough to explain in a hackathon demo.</p></div>
+  <div class="steps">
+    <article><b>01</b><h3>Tell us about you</h3><p>Share your education, marks, interests, skills and preferences.</p></article>
+    <article><b>02</b><h3>Get your profile</h3><p>The scoring engine evaluates multiple factors and ranks careers.</p></article>
+    <article><b>03</b><h3>Understand the why</h3><p>See the evidence behind your match instead of a black-box result.</p></article>
+    <article><b>04</b><h3>Plan your next step</h3><p>Use your skill gap, roadmap and career comparison to plan learning.</p></article>
+  </div>
+</section>
+
+<section class="section feature-section">
+  <div class="section-heading"><span class="eyebrow">Why this project</span><h2>More than a career quiz.</h2></div>
+  <div class="feature-grid">
+    <article class="feature-card"><span>◈</span><h3>Explainable AI</h3><p>Every recommendation includes factors and human-readable reasons.</p></article>
+    <article class="feature-card"><span>⌁</span><h3>Skill-gap analysis</h3><p>See which skills you already have and which ones to develop next.</p></article>
+    <article class="feature-card"><span>◎</span><h3>Personal roadmap</h3><p>Career-specific learning stages turn a result into a practical plan.</p></article>
+    <article class="feature-card"><span>⇄</span><h3>Career comparison</h3><p>Compare two paths and explore “what if I choose another career?”</p></article>
+  </div>
+</section>
+
+<section class="cta">
+  <div><span class="eyebrow">Your next move</span><h2>Don't just pick a career.<br>Understand your path.</h2></div>
+  <a class="btn btn-primary" href="{{ url_for('assessment') }}">Take the assessment →</a>
+</section>
+{% endblock %}

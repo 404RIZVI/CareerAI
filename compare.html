@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Compare Careers · CareerAI{% endblock %}
+{% block content %}
+<section class="compare-shell">
+  <div class="section-heading"><span class="eyebrow">Decision support</span><h1>Compare career paths.</h1><p>Use the same assessment profile to understand the trade-offs between two options.</p></div>
+  <form class="compare-select" method="get"><select name="left">{% for c in careers %}<option {% if c.name==comparison.left.career.name %}selected{% endif %}>{{ c.name }}</option>{% endfor %}</select><span>vs</span><select name="right">{% for c in careers %}<option {% if c.name==comparison.right.career.name %}selected{% endif %}>{{ c.name }}</option>{% endfor %}</select><button class="btn btn-primary">Compare</button></form>
+  <div class="compare-grid">
+    {% for side in [comparison.left, comparison.right] %}<article class="compare-card"><div class="compare-score">{{ side.score|round|int }}%</div><h2>{{ side.career.name }}</h2><p>{{ side.career.description }}</p><div class="compare-section"><h3>Profile match</h3>{% for key, value in side.parts.items() %}<div class="metric"><span>{{ key|capitalize }}</span><div class="bar"><i style="width:{{ value }}%"></i></div><b>{{ value|round|int }}%</b></div>{% endfor %}</div><div class="compare-section"><h3>Core skills</h3><div class="chip-wrap">{% for s in side.career.skills %}<span class="skill-chip">{{ s }}</span>{% endfor %}</div></div><div class="compare-section"><h3>Learning path</h3><ol class="road-list">{% for s in side.career.roadmap %}<li>{{ s }}</li>{% endfor %}</ol></div><div class="compare-section"><h3>Roles</h3><p>{{ side.career.jobs|join(" · ") }}</p></div></article>{% endfor %}
+  </div>
+</section>
+{% endblock %}
