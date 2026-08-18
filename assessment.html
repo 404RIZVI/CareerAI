@@ -1,0 +1,469 @@
+{% extends "base.html" %}
+
+{% block title %}Career Assessment · CareerAI{% endblock %}
+
+{% block content %}
+
+<section class="assessment-shell">
+
+    <div class="assessment-head">
+        <span class="eyebrow">Career assessment</span>
+
+        <h1>Build your career profile.</h1>
+
+        <p>
+            Answer honestly. There are no “correct” answers —
+            the engine looks for patterns.
+        </p>
+    </div>
+
+
+    <!-- Progress -->
+    <div class="progress-wrap">
+        <div class="progress-label">
+            <span id="stepLabel">Step 1 of 6</span>
+            <span id="progressPercent">17%</span>
+        </div>
+
+        <div class="progress">
+            <i id="progressBar"></i>
+        </div>
+    </div>
+
+
+    <!-- Assessment Form -->
+    <form
+        id="assessmentForm"
+        action="{{ url_for('analyze') }}"
+        method="post"
+        novalidate
+    >
+
+        <!-- =========================
+             STEP 1 - BASIC PROFILE
+        ========================== -->
+
+        <section class="step active" data-step="1">
+
+            <div class="form-card">
+
+                <h2>Basic profile</h2>
+
+                <p class="muted">
+                    Start with a few basics.
+                </p>
+
+
+                <div class="form-grid">
+
+                    <label>
+                        Full name
+
+                        <input
+                            name="name"
+                            required
+                            maxlength="80"
+                            placeholder="e.g. Alex Sharma"
+                        >
+                    </label>
+
+
+                    <label>
+                        Age
+
+                        <input
+                            name="age"
+                            type="number"
+                            min="13"
+                            max="100"
+                            required
+                            placeholder="18"
+                        >
+                    </label>
+
+
+                    <label>
+                        Current education
+
+                        <select name="education" required>
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="School">
+                                School
+                            </option>
+
+                            <option value="Diploma">
+                                Diploma
+                            </option>
+
+                            <option value="Undergraduate">
+                                Undergraduate
+                            </option>
+
+                            <option value="Postgraduate">
+                                Postgraduate
+                            </option>
+
+                        </select>
+                    </label>
+
+
+                    <label>
+                        Academic stream
+
+                        <select
+                            name="stream"
+                            id="stream"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            {% for stream in subjects %}
+
+                                <option value="{{ stream }}">
+                                    {{ stream }}
+                                </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STEP 2 - ACADEMIC
+        ========================== -->
+
+        <section class="step" data-step="2">
+
+            <div class="form-card">
+
+                <h2>Academic performance</h2>
+
+                <p class="muted">
+                    Choose your stream first; only relevant subjects appear.
+                </p>
+
+
+                <div id="subjectPanels">
+
+                    {% for stream, subs in subjects.items() %}
+
+                        <div
+                            class="subject-panel"
+                            data-stream="{{ stream }}"
+                        >
+
+                            <div class="subject-grid">
+
+                                {% for subject in subs %}
+
+                                    <label>
+                                        {{ subject }}
+
+                                        <input
+                                            name="subject_{{ subject }}"
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            step="0.1"
+                                            placeholder="0–100"
+                                        >
+                                    </label>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STEP 3 - INTERESTS
+        ========================== -->
+
+        <section class="step" data-step="3">
+
+            <div class="form-card">
+
+                <h2>What pulls your attention?</h2>
+
+                <p class="muted">
+                    Select at least one. Multiple choices are encouraged.
+                </p>
+
+
+                <div class="choice-grid">
+
+                    {% for item in interests %}
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="interests"
+                                value="{{ item }}"
+                            >
+
+                            <span>
+                                {{ item }}
+                            </span>
+
+                        </label>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STEP 4 - SKILLS
+        ========================== -->
+
+        <section class="step" data-step="4">
+
+            <div class="form-card">
+
+                <h2>What can you already do?</h2>
+
+                <p class="muted">
+                    Select skills you have practiced,
+                    even at beginner level.
+                </p>
+
+
+                <div class="choice-grid">
+
+                    {% for item in skills %}
+
+                        <label class="choice">
+
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                value="{{ item }}"
+                            >
+
+                            <span>
+                                {{ item }}
+                            </span>
+
+                        </label>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STEP 5 - PREFERENCES
+        ========================== -->
+
+        <section class="step" data-step="5">
+
+            <div class="form-card">
+
+                <h2>How do you prefer to work?</h2>
+
+                <p class="muted">
+                    Rate each statement from
+                    1 (not me) to 5 (very much me).
+                </p>
+
+
+                <div class="rating-list">
+
+                    {% for key, label in preference_fields %}
+
+                        <div class="rating-row">
+
+                            <span>
+                                {{ label }}
+                            </span>
+
+
+                            <div class="rating-buttons">
+
+                                {% for n in range(1, 6) %}
+
+                                    <label>
+
+                                        <input
+                                            type="radio"
+                                            name="{{ key }}"
+                                            value="{{ n }}"
+                                        >
+
+                                        <b>
+                                            {{ n }}
+                                        </b>
+
+                                    </label>
+
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STEP 6 - APTITUDE
+        ========================== -->
+
+        <section class="step" data-step="6">
+
+            <div class="form-card">
+
+                <h2>Problem-solving style</h2>
+
+                <p class="muted">
+                    Pick the option that feels closest to you.
+                </p>
+
+
+                <div class="aptitude-list">
+
+                    {% for q in questions[:10] %}
+
+                        <fieldset>
+
+                            <legend>
+                                {{ loop.index }}. {{ q.question }}
+                            </legend>
+
+
+                            <label>
+                                <input
+                                    required
+                                    type="radio"
+                                    name="aptitude_{{ loop.index }}"
+                                    value="0"
+                                >
+
+                                {{ q.option_a }}
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="aptitude_{{ loop.index }}"
+                                    value="1"
+                                >
+
+                                {{ q.option_b }}
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="aptitude_{{ loop.index }}"
+                                    value="2"
+                                >
+
+                                {{ q.option_c }}
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="aptitude_{{ loop.index }}"
+                                    value="3"
+                                >
+
+                                {{ q.option_d }}
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="aptitude_{{ loop.index }}"
+                                    value="4"
+                                >
+
+                                {{ q.option_e }}
+                            </label>
+
+                        </fieldset>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NAVIGATION BUTTONS
+        ========================== -->
+
+        <div class="form-actions">
+
+            <button
+                type="button"
+                id="prevBtn"
+                class="btn btn-ghost"
+                disabled
+            >
+                ← Back
+            </button>
+
+
+            <button
+                type="button"
+                id="nextBtn"
+                class="btn btn-primary"
+            >
+                Continue →
+            </button>
+
+        </div>
+
+    </form>
+
+</section>
+
+{% endblock %}
